@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5e9; /* Fondo verde claro */
+    color: #2e7d32; /* Texto verde oscuro */
+    animation: fadeIn 2s ease-in; /* Animación de introducción */
+}
+
+/* Encabezado principal */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #1b5e20; /* Verde más oscuro */
+    margin-top: 20px;
+}
+
+/* Subencabezado */
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #33691e; /* Tonalidad verde media */
+    margin-top: 20px;
+}
+
+/* Párrafos */
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 10px 20px;
+}
+
+/* Lista de elementos */
+ul {
+    list-style-type: circle;
+    margin: 20px auto;
+    padding: 0;
+    width: 50%;
+    font-size: 1.2em;
+}
+
+ul li {
+    margin: 10px 0;
+    color: #558b2f; /* Verde hoja */
+}
+
+/* Imagen */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%; /* Imagen adaptativa */
+    border: 5px solid #4caf50; /* Marco verde inspirado en los colores del diseño */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para realce */
+}
+
+/* Botón */
+a button {
+    background-color: #4caf50; /* Verde vivo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+a button:hover {
+    background-color: #388e3c; /* Verde oscuro al pasar el mouse */
+}
+
+/* Animación de introducción */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*estas las consegi por alli y las modifique poquito por miedo*/
+
+/* Respuesta responsiva */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.8em;
+    }
+    ul {
+        width: 80%;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+/*perdon*/

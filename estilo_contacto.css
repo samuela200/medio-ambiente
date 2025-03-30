@@ -1,0 +1,84 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(verde_claro.jpg);
+    color: #2e7d32; /* Verde oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #ffffff; /* Blanco */
+    border: 2px solid #4caf50; /* Borde verde */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el formulario */
+    padding: 20px 30px;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Etiquetas de los campos */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #388e3c; /* Verde medio */
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #c8e6c9; /* Verde claro */
+    border-radius: 5px;
+    background-color: #f1f8e9; /* Verde muy claro */
+    color: #2e7d32; /* Texto en verde oscuro */
+    font-size: 14px;
+}
+
+/* Efecto al enfocar los campos */
+form input:focus {
+    outline: none;
+    border: 1px solid #4caf50; /* Resalta el borde en verde */
+    background-color: #e8f5e9;
+}
+
+/* Botón enviar */
+form button {
+    background-color: #4caf50; /* Verde vivo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #388e3c; /* Verde más oscuro */
+}
+
+/* Enlace a otra página */
+form .btn-navegar {
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #81c784; /* Verde claro */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form .btn-navegar:hover {
+    background-color: #4caf50; /* Verde más vivo */
+}

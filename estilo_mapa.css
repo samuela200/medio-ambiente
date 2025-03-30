@@ -1,0 +1,85 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9; /* Verde claro */
+    color: #2e7d32; /* Texto en verde oscuro */
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Cuadro de información */
+#info-box {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #2e7d32;
+    display: none; /* Oculto por defecto */
+}
+
+/* Mostrar el cuadro de información al interactuar */
+.region:hover ~ #info-box,
+.region:focus ~ #info-box {
+    display: block; /* Muestra el cuadro al interactuar */
+}
+
+/* Cambiar el contenido del cuadro de información */
+.region:hover ~ #info-box #info-text::before,
+.region:focus ~ #info-box #info-text::before {
+    content: attr(data-info); /* Inserta el texto desde el atributo data-info */
+    display: block;
+}
+
+/* Mapa SVG */
+svg {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+}
+
+/* Estilo de las regiones */
+.region {
+    fill: #aed581; /* Color inicial */
+    stroke: #33691e;
+    stroke-width: 2;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+.region:hover {
+    fill: #7cb342; /* Cambia de color al pasar el mouse */
+}
+
+.region:focus {
+    fill: #558b2f; /* Cambia al enfocar con el teclado */
+    outline: none;
+}
+
+/* Botones de navegación */
+.buttons {
+    margin: 30px 0;
+}
+
+.button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #388e3c; /* Verde más oscuro */
+}

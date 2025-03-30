@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo</title>
+    <link rel="stylesheet" href="estilo_mapa.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Mapa Interactivo de Regiones</h1>
+
+    <!-- Cuadro de información -->
+    <div id="info-box">
+        <p id="info-text">Pasa el mouse sobre una región para ver detalles.</p>
+    </div>
+
+    <!-- Leyenda con links -->
+    <div id="leyenda">
+        <h2>Leyenda</h2>
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/Monta%C3%B1a" target="_blank"><span class="color region1"></span> Región 1: Montañas</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Bosque" target="_blank"><span class="color region2"></span> Región 2: Bosques</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Costa" target="_blank"><span class="color region3"></span> Región 3: Costas</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Ciudad" target="_blank"><span class="color region4"></span> Región 4: Ciudades</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Lago" target="_blank"><span class="color region5"></span> Región 5: Lagos</a></li>
+        </ul>
+    </div>
+
+    <!-- Mapa SVG -->
+    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <!-- Región 1 -->
+        <path class="region region1" d="M50,50 L150,50 L100,150 Z" data-info="Región 1: Una zona montañosa con hermosos paisajes"></path>
+        <text x="80" y="90">Región 1</text>
+
+        <!-- Región 2 -->
+        <path class="region region2" d="M200,50 L300,50 L250,150 Z" data-info="Región 2: Rica en flora y fauna"></path>
+        <text x="230" y="90">Región 2</text>
+
+        <!-- Región 3 -->
+        <path class="region region3" d="M50,200 L150,200 L100,300 Z" data-info="Región 3: Un lugar con playas paradisíacas"></path>
+        <text x="80" y="250">Región 3</text>
+
+        <!-- Región 4 -->
+        <path class="region region4" d="M200,200 L300,200 L250,300 Z" data-info="Región 4: Conocida por su diversidad cultural"></path>
+        <text x="230" y="250">Región 4</text>
+
+        <!-- Región 5 -->
+        <circle class="region region5" cx="400" cy="150" r="50" data-info="Región 5: Destacada por sus lagos y ríos"></circle>
+        <text x="370" y="155">Región 5</text>
+    </svg>
+
+    <!-- Botones para navegar -->
+    <div class="buttons">
+        <a href="menu.html" class="button">volver a menu</a>
+    </div>
+</body>
+</html>

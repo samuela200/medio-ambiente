@@ -1,0 +1,63 @@
+/* Estilo del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333; /* Texto gris oscuro */
+    text-align: center;
+}
+/*estilo del canvas*/
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #4caf50; /* Borde verde */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+/* Botón de control */
+button {
+    background-color: #4caf50; /* Verde vivo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c; /* Verde oscuro al pasar el mouse */
+}
+
+button:active {
+    background-color: #2e7d32; /* Verde más intenso al presionar */
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra interna */
+}
+
+/* Texto descriptivo */
+p {
+    font-size: 14px;
+    color: #555; /* Texto gris suave */
+    margin: 5px 0;
+}
+
+/* Enlace de navegación */
+.buttons .button {
+    background-color: #4caf50; /* Verde vivo */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px auto;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .button:hover {
+    background-color: #388e3c; /* Verde más oscuro */
+}
